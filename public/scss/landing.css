@@ -95,17 +95,12 @@ section {
   text-align: center;
   padding: 15em 0;
   background: #222;
-}
-
-@supports (background-blend-mode: multiply) {
-  .hero {
-    background: url(../images/banners/mountains.jpeg), radial-gradient(#c0c0c0, #111);
-    background-blend-mode: multiply;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+  background: url(../images/banners/mountains.jpeg), radial-gradient(#c0c0c0, #111);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
 }
 
 .featured {
