@@ -96,26 +96,17 @@ section {
   padding: 15em 0;
   background: #222;
 
-  // h1 {
-  //   color: #92a8d1;
-  // }
-
-  // @supports (background-blend-mode: multiply) {
-  //   background: url(../images/banners/mountains.jpeg),
-  //     radial-gradient(#c0c0c0, #111);
-  //   background-blend-mode: multiply;
-  //   background-size: 100%;
-  //   background-attachment: fixed;
-  //   background-repeat: no-repeat;
-  //   background-position: center center;
-  // }
-  background: url(https://myphotos-tanisportfolio.s3.us-west-1.amazonaws.com/mountains.jpeg),
-    radial-gradient(#c0c0c0, #111);
-  background-size: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-blend-mode: multiply;
+  @supports (background-blend-mode: screen) {
+    background: url(../images/banners/mountains.jpeg),
+      radial-gradient(#c0c0c0, #111);
+    background-blend-mode: color-burn;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  // background: url(https://myphotos-tanisportfolio.s3.us-west-1.amazonaws.com/mountains.jpeg),
+  //   radial-gradient(#c0c0c0, #111);
 }
 
 .featured {
